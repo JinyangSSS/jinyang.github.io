@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="icon" href="image/iconproduct.png">
+    <link rel="stylesheet" href="index.css">
+    <style>
+    .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 40px;
+    padding-right: 6px;
+    }
+        /* Create four equal columns that sits next to each other */
+    .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+    }
+
+    .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    }
+    .row img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 2;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <a href="index.html"><img src="image/pinelogo.png" alt="Logo" class="logo"></a>
+            <h1>Pineapple</h1> 
+            <div class="link">
+                <a href="index.html">Home</a> &nbsp;
+                <a href="menu.html">Product</a> &nbsp;
+                <a href="support.html">Support</a> &nbsp;
+                <a href="contact.html">Contact</a> &nbsp;
+                <a href="about.html">About</a> 
+            </div>
+        </header> 
+    
+        <!-- <h2>Our Products</h2> -->
+    <nav class="box">
+        
+        <div class="phone">
+            <h2>Pinephone</h2>
+            <a href="pinephone.html"><img src="image/pinephone14promax.JPEG" alt="Phone"></a>
+            <p>Pro Beyond. Your first choice <br>
+                The ultra device you are looking for.
+            </p>
+            <a href="pinephone.html" class="more">See More</a>
+        </div>  &nbsp; &nbsp; &nbsp;
+
+
+        <div class="pinepod">
+            <h2>Pinepod</h2>
+            <a href="pinepod.html"><img src="image/pinepod.jfif" alt="Pinepod"></a>
+            <p>Magical connection to your devices. <br>
+                 Advanced sound technique ever.
+            </p>
+            <a href="pinepod.html" class="more">See More</a>
+        </div>  &nbsp; &nbsp; &nbsp;
+
+        <div class="accessories">
+            <h2>Accessories</h2>
+            <a href="accessories.html"><img src="image/accessories1.jpeg" alt="Accessories"></a>
+            <p>Mix. Match. MagSafe.
+             wallet, wireless <br> charger, or battery pack.</p>
+            <a href="accessories.html" class="more">See More</a>
+            <br><br>
+        </div>
+        
+        </nav>   
+        <!-- Photo Grid -->
+        <div class="row"> 
+            <div class="column">
+            <img src="image/deeppurple.jpg" style="width:100%">
+            <img src="image/deeppurple2.jpg" style="width:100%">
+            <img src="image/deeppurple3.jpg" style="width:100%">
+            </div>
+            <div class="column">
+            <img src="image/gold.jpg" style="width:100%">
+            <img src="image/gold2.jpg" style="width:100%">
+            <img src="image/gold3.jpg" style="width:100%">
+            </div>  
+            <div class="column">
+            <img src="image/silver.jpg" style="width:100%">
+            <img src="image/silver2.jpg" style="width:100%">
+            <img src="image/silver3.jpg" style="width:100%">
+            </div>
+            <div class="column">
+            <img src="image/black.jpg" style="width:100%">
+            <img src="image/black2.jpg" style="width:100%">
+            <img src="image/black3.jpg" style="width:100%">
+            <!-- <img src="/w3images/mountainskies.jpg" style="width:100%">
+            <img src="/w3images/rocks.jpg" style="width:100%">
+            <img src="/w3images/underwater.jpg" style="width:100%"> -->
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <h3>Sign up now !</h3> <br>
+            <i>Enjoy your 10% discount on first purchase with free delivery. </i> <br><br>
+            
+            <form action="https://www.w3schools.com/action_page.php">
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Submit" class="submit" >
+            </form>
+            <h6>Copyright &copy; Pineapple 2022</h6>
+            </footer>
+    </div>
+    
+</body>
+</html>
